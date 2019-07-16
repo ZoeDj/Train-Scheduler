@@ -12,104 +12,107 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 <body>
-    <div class="container">
+    
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
           <h1 class="display-4">Train Schedule</h1>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          Current Train Schedule
-        </div>
-        <div class="card-body">
-            <div class="table-responsive-sm">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Train Name</th>
-                  <th scope="col">Destination</th>
-                  <th scope="col">Frequency (min)</th>
-                  <th scope="col">Next Arrival</th>
-                  <th scope="col">Minutes Away</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Capital Express</th>
-                  <td>Washington, DC</td>
-                  <td>45</td>
-                  <td>05:25pm</td>
-                  <td>25</td>
-                  
-                </tr>
-                <tr>
-                  <th scope="row">Black Diamond Bullet</th>
-                  <td>Las Vegas, NV</td>
-                  <td>120</td>
-                  <td>06:42pm</td>
-                  <td>102</td>
-                </tr>
-                <tr>
-                  <th scope="row">Silver Arrow</th>
-                  <td>New York City</td>
-                  <td>90</td>
-                  <td>07:13pm</td>
-                  <td>133</td>
-                </tr>
-                <tr>
-                  <th scope="row">Southern Rocket</th>
-                  <td>Miami, FL</td>
-                  <td>360</td>
-                  <td>05:00pm</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <th scope="row">Charolina Caravan</th>
-                  <td>Raleigh, NC</td>
-                  <td>240</td>
-                  <td>06:23pm</td>
-                  <td>83</td>
-                </tr>
-                <tr>
-                  <th scope="row">The Green Train</th>
-                  <td>Chicago, IL</td>
-                  <td>3000</td>
-                  <td>08:07pm</td>
-                  <td>187</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-header">
+                Current Train Schedule
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive-sm">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Capital Express</th>
+                        <td>Washington, DC</td>
+                        <td>45</td>
+                        <td>05:25pm</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blue Bullet</th>
+                        <td>Las Vegas, NV</td>
+                        <td>120</td>
+                        <td>06:42pm</td>
+                        <td>102</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Silver Arrow</th>
+                        <td>New York City</td>
+                        <td>90</td>
+                        <td>07:13pm</td>
+                        <td>133</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Southern Rocket</th>
+                        <td>Miami, FL</td>
+                        <td>360</td>
+                        <td>05:00pm</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Carolina Caravan</th>
+                        <td>Raleigh, NC</td>
+                        <td>240</td>
+                        <td>06:23pm</td>
+                        <td>83</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">The Green Train</th>
+                        <td>Chicago, IL</td>
+                        <td>3000</td>
+                        <td>08:07pm</td>
+                        <td>187</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="card-header">
-              Add Train
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                      <label for="train-name-input">Train Name</label>
-                      <input type="train-name" class="form-control" id="train-name-input" >
-                    </div>
-                    <div class="form-group">
-                      <label for="destination-input">Destination</label>
-                      <input type="destination" class="form-control" id="destination-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="first-train-input">First Train Time (HH:mm - military time)</label>
-                        <input type="first-train" class="form-control" id="first-train-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="frequency-input">Frequency</label>
-                        <input type="frequency" class="form-control" id="frequency-input">
-                      </div>
-                      
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-            </div>
+          <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                  Add Train
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="train-name-input">Train Name</label>
+                          <input type="train-name" class="form-control" id="train-name-input" >
+                        </div>
+                        <div class="form-group">
+                          <label for="destination-input">Destination</label>
+                          <input type="destination" class="form-control" id="destination-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="first-train-input">First Train Time (HH:mm - military time)</label>
+                            <input type="first-train" class="form-control" id="first-train-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency-input">Frequency</label>
+                            <input type="frequency" class="form-control" id="frequency-input">
+                          </div>
+                          
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                </div>
+                </div>
       </div>
     </div> 
 </body>

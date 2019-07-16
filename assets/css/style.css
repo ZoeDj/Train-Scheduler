@@ -3,6 +3,7 @@
     background-image: url(../images/train.jpg);
     background-position: 100%;
     background-size: cover;
+    background-size: 100%;
 }
 .display-4 {
     background: #ffffffab;
@@ -15,4 +16,18 @@
 .btn.btn-primary{
     color: #ffeb3b;
     background: #161720;
+}
+.card{
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 960px){
+    .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+    .col-8 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
