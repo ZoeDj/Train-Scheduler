@@ -1,0 +1,18 @@
+/* <img src="assets/images/train.jpg" class="img-fluid" alt="Responsive image"> */
+.jumbotron.jumbotron-fluid{
+    background-image: url(../images/train.jpg);
+    background-position: 100%;
+    background-size: cover;
+}
+.display-4 {
+    background: #ffffffab;
+    text-align: center;
+}
+.card-header{
+    color: #ffeb3b;
+    background: #161720;
+}
+.btn.btn-primary{
+    color: #ffeb3b;
+    background: #161720;
+}
