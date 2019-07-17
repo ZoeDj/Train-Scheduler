@@ -16,6 +16,11 @@
 .btn.btn-primary{
     color: #ffeb3b;
     background: #161720;
+    border: none;
+}
+.btn.btn-primary:hover{
+    background: #161720d9;
+    color: #f9e006;
 }
 .card{
     margin-bottom: 30px;
