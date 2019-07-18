@@ -39,7 +39,7 @@ $("#frequency-input").val("");
 
 });
 
-// Checks for changes in Firebase and loades data from Firebase 
+// Checks for changes in Firebase and loads data from Firebase 
 database.ref("/trains").on("child_added", function(childSnapshot) {
 
 // Convinient variables for storing the values from the Firebase
