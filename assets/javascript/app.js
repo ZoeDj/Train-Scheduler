@@ -55,7 +55,8 @@ database.ref("/trains").on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val().frequency);   
 
 // Converts the train time
-  var firstTrainTimeConverted = moment(newTime, "HH:mm").subtract(1, "years");;
+  var firstTrainTimeConverted = moment(newTime, "HH:mm").subtract(1, "years");
+
   var currentTime = moment();
   
 // Difference between the first train and now
@@ -70,11 +71,15 @@ database.ref("/trains").on("child_added", function(childSnapshot) {
 // Next Train
   var nextTrain = moment().add(minutesLeft, "minutes").format("HH:mm");
 
+
+  // var nextTrain = moment().add(tMinutesTillTrain, "minutes");
+  //console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+
 $("#new-train").append("<tr><td>" + 
 newName + "</td>" + "<td>" + 
 newDestination + "</td>" + "<td>" + 
 newFrequency + "</td>" + "<td>" + 
-newTime + "</td>" + "<td>" + 
+nextTrain + "</td>" + "<td>" + 
 minutesLeft + "</td>" + "</tr>");
 
 // Handle the errors  
