@@ -2,7 +2,8 @@
 const firebaseConfig = {
   apiKey: "AIzaSyDQq8UjuDhmVGSqYzydlyfmUq8dr5gnAIU",
   authDomain: "train-schedule-f011c.firebaseapp.com",
-  databaseURL: "https://train-schedule-f011c.firebaseio.com",
+  //databaseURL: "https://train-schedule-f011c.firebaseio.com",
+  databaseURL: "https://train-schedule-f011c-default-rtdb.firebaseio.com",
   projectId: "train-schedule-f011c",
   storageBucket: "train-schedule-f011c.firebasestorage.app",
   messagingSenderId: "318206099540",
