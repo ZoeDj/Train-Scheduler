@@ -2,14 +2,14 @@
 const firebaseConfig = {
   apiKey: "AIzaSyDQq8UjuDhmVGSqYzydlyfmUq8dr5gnAIU",
   authDomain: "train-schedule-f011c.firebaseapp.com",
+  databaseURL: "https://train-schedule-f011c.firebaseio.com",
   projectId: "train-schedule-f011c",
   storageBucket: "train-schedule-f011c.firebasestorage.app",
   messagingSenderId: "318206099540",
   appId: "1:318206099540:web:714e173e9833ccbcf36dc1",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
